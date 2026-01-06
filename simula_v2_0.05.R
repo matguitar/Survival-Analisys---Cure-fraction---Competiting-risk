@@ -211,7 +211,7 @@ ml_optim <- function(theta_init, data) {
 #              control = list(fnscale = -1, maxit = 10000))
 #   theta0 <- mgg1$par
 #   mgg <- optim(theta0, fvero, data = data, method = "BFGS",
-             control = list(fnscale = -1, maxit = 1000))
+#             control = list(fnscale = -1, maxit = 1000))
     
     if (mgg$convergence != 0) {
         return(list(par = rep(NA, N_PARAM), converged = FALSE))
